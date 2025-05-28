@@ -1,0 +1,23 @@
+.insta_cont_lst {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.insta_cont_lst_itm {
+  flex: 1 0 25%; /* 4つで100%になるように */
+  padding: 0;
+  margin: 0;
+}
+
+.insta_cont_lst_itm img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.insta_head img {
+    width: 100px;
+}
