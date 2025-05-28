@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/hamb.css">
+    <link rel="stylesheet" href="styles/head.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/sbi-style.css">
+    <link rel="stylesheet" href="styles/side.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/unique.css">
+    <link rel="stylesheet" href="styles/post.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+    <!-- Header -->
+    <header class="l_wrap">
+        <div class="header_nav_cont">
+            <nav class="header_nav l_flex l_alignItemsCenter l_justifyContentEnd l_justifyContentBetween_sm">
+                <figure class="header_nav_img_sp u_img">
+                    <a href="index.html">
+                        <img src="images/hoiku-root_logo.png" alt="">
+                    </a>
+                </figure>
+                <div class="header_nav_lst_cont">
+                    <ul class="header_nav_lst l_flex l_alignItemsCenter shadows-into-light-regular">
+                        <li class="header_nav_lst_itm">
+                            <a class="header_nav_lst_itm_inr" href="index.html">
+                                ホーム
+                            </a>
+                        </li>
+                        <li class="header_nav_lst_itm">
+                            <a class="header_nav_lst_itm_inr" href="company.html">
+                                全国の保育園情報
+                            </a>
+                        </li>
+                        <li class="header_nav_lst_itm">
+                            <a class="header_nav_lst_itm_inr" href="recruitment.html">
+                                求人検索
+                            </a>
+                        </li>
+                        <li class="header_nav_lst_itm">
+                            <a class="header_nav_lst_itm_inr" href="favorite.html">
+                                お気に入り保育園
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamb l_flex l_directionColumn">                  
+                    <div class="hamb_inr">
+                            <div class="hamb_inr_top"></div>
+                            <div class="hamb_inr_mdl"></div>
+                            <div class="hamb_inr_btm"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="header_sitemap_cont js_sldNav">
+            <div class="header_sitemap_cont_inr u_pc">
+                <ul class="header_sitemap_cont_lst l_flex">
+                    <li class="header_sitemap_cont_lst_itm">
+                        <dl class="header_sitemap_cont_lst_dl">
+                            <dt class="header_sitemap_cont_lst_dt u_ic">
+                                <span class="header_sitemap_cont_lst_dt_icon u_img">
+                                    <img src="images/side_logo/1.png" alt="">
+                                </span>
+                                    サイトについて
+                            </dt>
+                            <dd class="header_sitemap_cont_lst_dd">
+                                <ul class="header_sitemap_lst">
+                                    <li class="header_sitemap_lst_itm">
+                                        <a class="header_sitemap_lst_itm_inr" href="https://kakehashiplus.com/">
+                                            ホーム
+                                        </a>
+                                    </li>
+                                    <li class="header_sitemap_lst_itm">
+                                        <a class="header_sitemap_lst_itm_inr" href="https://kakehashiplus.com/blog/">
+                                            ブログ一覧
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="header_sitemap_cont_lst_itm">
+                        <dl class="header_sitemap_cont_lst_dl">
+                            <dt class="header_sitemap_cont_lst_dt u_ic">
+                                <span class="header_sitemap_cont_lst_dt_icon u_img">
+                                    <img src="images/side_logo/2.png" alt="">
+                                </span>
+                                        企業検索
+                            </dt>
+                            <dd class="header_sitemap_cont_lst_dd">
+                                <ul class="header_sitemap_lst">
+                                    <li class="header_sitemap_lst_itm">
+                                        <a class="header_sitemap_lst_itm_inr" href="https://kakehashiplus.com/company/">
+                                            企業一覧
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="header_sitemap_cont_lst_itm">
+                        <dl class="header_sitemap_cont_lst_dl">
+                            <dt class="header_sitemap_cont_lst_dt u_ic">
+                                <span class="header_sitemap_cont_lst_dt_icon u_img">
+                                    <img src="images/side_logo/3.png" alt="">
+                                </span>
+                                    求人情報
+                            </dt>
+                            <dd class="header_sitemap_cont_lst_dd">
+                                <ul class="header_sitemap_lst">
+                                    <li class="header_sitemap_lst_itm">
+                                        <a class="header_sitemap_lst_itm_inr" href="https://kakehashiplus.com/recruitment/">
+                                            採用情報一覧
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="header_sitemap_cont_lst_itm">
+                        <dl class="header_sitemap_cont_lst_dl">
+                            <dt class="header_sitemap_cont_lst_dt u_ic">
+                                <span class="header_sitemap_cont_lst_dt_icon u_img">
+                                    <img src="images/side_logo/4.png" alt="">
+                                </span>
+                                    お気に入り
+                            </dt>
+                            <dd class="header_sitemap_cont_lst_dd">
+                                <ul class="header_sitemap_lst">
+                                    <li class="header_sitemap_lst_itm">
+                                        <a class="header_sitemap_lst_itm_inr" href="https://kakehashiplus.com/favorite/">
+                                            お気に入り一覧
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <!-- Sidebar -->
+    <aside class>
+        <div class="side_cont">
+            <a class="side_cont_inr" href="#"></a>
+            <figure class="side_cont_img">
+                <a class="side_cont_inr" href="#"></a>
+                <a href="index.html">
+                    <img src="images/hoiku-root_logo.png" alt="">
+                </a>
+            </figure>
+            <ul class="side_cont_lst shadows-into-light-regular">
+                <li class="side_cont_lst_itm">
+                    <a class="side_cont_lst_itm_inr l_alignItemsCenter l_flex" href="index.html">
+                        <span class="side_cont_lst_icon">
+                            <img src="images/side_logo/1.png" alt="">
+                        </span>
+                        <div class="side_cont_lst_txt shadows-into-light-regular">
+                            ホーム
+                        </div>
+                    </a>
+                </li>
+                <li class="side_cont_lst_itm">
+                    <a class="side_cont_lst_itm_inr l_AlignItemsCenter l_flex" href="index.html">
+                        <span class="side_cont_lst_icon">
+                            <img src="images/side_logo/2.png" alt="">
+                        </span>
+                        <div class="side_cont_lst_txt">
+                            全国の保育園情報
+                        </div>
+                    </a>
+                </li>
+                <li class="side_cont_lst_itm">
+                    <a class="side_cont_lst_itm_inr l_AlignItemsCenter l_flex" href="index.html">
+                        <span class="side_cont_lst_icon">
+                            <img src="images/side_logo/3.png" alt="">
+                        </span>
+                        <div class="side_cont_lst_txt">
+                            求人検索
+                        </div>
+                    </a>
+                </li>
+                <li class="side_cont_lst_itm">
+                    <a class="side_cont_lst_itm_inr l_AlignItemsCenter l_flex" href="index.html">
+                        <span class="side_cont_lst_icon">
+                            <img src="images/side_logo/4.png" alt="">
+                        </span>
+                        <div class="side_cont_lst_txt">
+                            お気に入り保育園
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <div class="top_main_content">
+        <main>
+            <section class="content l_wrap g_sec">
+                <div class="Content l_wrap_inr">
+                    <div class="g_ttl l_flex l_justifyContentCenter l_directionColumn l_alignItemsCenter">
+                        <h2 class="g_ttl_ja g_futura">おすすめ記事</h2>
+                    </div>
+                    <section class="section-lineup">
+                        <div class="inner">
+                            <ul class="g_lst mt_60 l_flex aligni">               
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>              
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="g_btn u_ic mx_auto">
+                        <a href="/blog.html">
+                            記事一覧
+                        </a>
+                    </div>
+                </div>
+                <div class="Content l_wrap_inr">
+                    <div class="g_ttl l_flex l_justifyContentCenter l_directionColumn l_alignItemsCenter">
+                        <h2 class="g_ttl_ja g_futura">新着記事</h2>
+                    </div>
+                    <section class="section-lineup">
+                        <div class="inner">
+                            <ul class="g_lst mt_60 l_flex aligni" id="post-list"></ul>
+                                <script>
+                                    async function loadPosts() {
+                                        const res = await fetch('/api/posts');
+                                        const posts = await res.json();
+                                        const list = document.getElementById('post-list');
+
+                                        posts.reverse().forEach(post => {
+                                        const li = document.createElement('li');
+                                        li.className = 'g_lst_itm g_info_itm_thum';
+
+                                        li.innerHTML = `
+                                            <a class="g_lst_itm_inr" href="post.html?id=${post.id}">
+                                            <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                <img src="${post.thumbnail || 'images/sidebar/home.png'}" alt="">
+                                            </figure>
+                                            <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                <p class="g_lst_txt">${post.title}</p>
+                                                <div class="g_lst_arrow_cont">
+                                                <div class="g_lst_arrow g_bold">記事を読む</div>
+                                                </div>
+                                                <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                                                ${new Date(post.date).toLocaleString()}
+                                                </div>
+                                            </div>
+                                            </a>
+                                        `;
+                                        list.appendChild(li);
+                                        });
+                                    }
+
+                                    loadPosts();
+                                </script>
+
+                        </div>
+                    </section>
+                    <div class="g_btn u_ic mx_auto">
+                        <a href="/blog.html">
+                            記事一覧
+                        </a>
+                    </div>
+                </div>
+                <div class="Content l_wrap_inr">
+                    <div class="g_ttl l_flex l_justifyContentCenter l_directionColumn l_alignItemsCenter">
+                        <h2 class="g_ttl_ja g_futura">人気記事</h2>
+                    </div>
+                    <section class="section-lineup">
+                        <div class="inner">
+                            <ul class="g_lst mt_60 l_flex aligni">               
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>
+                                <li class="g_lst_itm g_info_itm_thum">
+                                            <a class="g_lst_itm_inr" href="">
+                                                <figure class="g_info_itm_thum_img g_lst_itm_img u_img">
+                                                    <img src="images/sidebar/home.png" alt="">
+                                                </figure>
+                                                <div class="g_lst_txtarea_outer l_flex l_directionColumn">
+                                                    <p class="g_lst_txt">
+                                                        小規模保育園への転職情報を掲載中
+                                                    </p>
+                                                    <div class="g_lst_arrow_cont">
+                                                        <div class="g_lst_arrow g_bold">
+                                                            記事を読む
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                </li>              
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="g_btn u_ic mx_auto">
+                        <a href="/blog.html">
+                            記事一覧
+                        </a>
+                    </div>
+                </div>
+		    </section>
+            <section class="post_blog">
+                <a href="form.html">
+                    <div class="l_flex post_blog_inner">
+                        <h3>記事を掲載する</h3>
+                        <p class="post_arrow">&gt;</p>
+                    </div>
+                </a>
+            </section>
+        </main> 
+
+
+        <!-- <footer class="footer l_wrap u_ic">
+                <ul class="g_img_lst l_flex pt_20 mt-60">
+                    <li class="g_img_lst_itm g_info_itm_thum">
+                        <a class="g_img_lst_itm_inr u_ic" href="">
+                            <figure class="g_info_itm_thum_img g_img_lst_img u_img">
+                                <img src="" alt="画像">
+                            </figure>
+                            <div class="g_img_lst_ttl_area">
+                                <div class="g_img_lst_ttl_ja">
+                                    ホーム
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="g_img_lst_itm g_info_itm_thum">
+                        <a class="g_img_lst_itm_inr u_ic" href="">
+                            <figure class="g_info_itm_thum_img g_img_lst_img u_img">
+                                <img src="" alt="画像">
+                            </figure>
+                            <div class="g_img_lst_ttl_area">
+                                <div class="g_img_lst_ttl_ja">
+                                    ホーム
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="g_img_lst_itm g_info_itm_thum">
+                        <a class="g_img_lst_itm_inr u_ic" href="">
+                            <figure class="g_info_itm_thum_img g_img_lst_img u_img">
+                                <img src="" alt="画像">
+                            </figure>
+                            <div class="g_img_lst_ttl_area">
+                                <div class="g_img_lst_ttl_ja">
+                                    ホーム
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="g_img_lst_itm g_info_itm_thum">
+                        <a class="g_img_lst_itm_inr u_ic" href="">
+                            <figure class="g_info_itm_thum_img g_img_lst_img u_img">
+                                <img src="" alt="画像">
+                            </figure>
+                            <div class="g_img_lst_ttl_area">
+                                <div class="g_img_lst_ttl_ja">
+                                    ホーム
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="g_img_lst_itm g_info_itm_thum">
+                        <a class="g_img_lst_itm_inr u_ic" href="">
+                            <figure class="g_info_itm_thum_img g_img_lst_img u_img">
+                                <img src="" alt="画像">
+                            </figure>
+                            <div class="g_img_lst_ttl_area">
+                                <div class="g_img_lst_ttl_ja">
+                                    ホーム
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="g_img_lst_itm g_info_itm_thum">
+                        <a class="g_img_lst_itm_inr u_ic" href="">
+                            <figure class="g_info_itm_thum_img g_img_lst_img u_img">
+                                <img src="" alt="画像">
+                            </figure>
+                            <div class="g_img_lst_ttl_area">
+                                <div class="g_img_lst_ttl_ja">
+                                    ホーム
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+        </footer> -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/index.js"></script>
+    
+    </div>
+</body>

@@ -1,0 +1,49 @@
+.hamb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: fle;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center!important;
+    align-items: center !important;
+    -ms-flex-pack: center!important;
+    justify-content: center !important;
+    background-color: #000;
+    padding: 18px 18px;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.hamb_inr {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ← 上と下に分ける */
+}
+
+.hamb_inr_top,
+.hamb_inr_mdl,
+.hamb_inr_btm {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.hamb.js_open .hamb_inr_top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.hamb.js_open .hamb_inr_btm {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+
